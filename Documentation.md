@@ -3,12 +3,10 @@
 #### Getting Started
 
 1. To get up and running, download UserVision from https://github.com/appyist/UserVision.git
-
 2. Drag UserVision.framework into your Xcode project.
-
 3. Add **UVAuthEmail** and **UVAuthSecret** key value pairs to your project's info.plist file.
 
-   ![Screen Shot 2017-06-01 at 15.28.27](/Users/emirhanerdogan/Desktop/Screen Shot 2017-06-01 at 15.28.27.png)
+![credentials_screenshot](images/credentials_screenshot.png)
 
 > These fields will be provided by UserVision.
 

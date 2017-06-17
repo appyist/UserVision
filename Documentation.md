@@ -6,7 +6,7 @@
 2. Drag UserVision.framework into your Xcode project.
 3. Add **UVAuthEmail** and **UVAuthSecret** key value pairs to your project's info.plist file.
 
-![credentials_screenshot](images/credentials_screenshot.png)
+![credentials_screenshot](Resources/credentials_screenshot.png)
 
 > These fields will be provided by UserVision.
 

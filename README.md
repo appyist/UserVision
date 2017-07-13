@@ -36,7 +36,7 @@ UserVision does not provide Dynamic Framework support yet.
 
 ## Requirement
 
-- Swift 3.0, 3.1, 3.2, Objective C
+- Swift 3.0, 3.1, 3.2 or Objective C
 - iOS 9.0+
 - Alamofire 4.4 (If used in your project)
 
@@ -97,26 +97,22 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     }
 ```
 
-3. You can optionally start UserVision in didBecomeActive and willEnterForeground functions.
+3. Edit your `applicationDidBecomeActive` and `applicationWillTerminated`.
 
 ```swift
 func applicationDidBecomeActive(_ application: UIApplication) {
         UserVision.shared.startSession()
 }
-    
-func applicationWillEnterForeground(_ application: UIApplication) {
-        UserVision.shared.startSession()
+
+func applicationWillTerminate(_ application: UIApplication) {
+        UserVision.shared.stopSession()
 }
 ```
 
-4. You can optionally stop UserVision in didEnterBackground and willTerminate functions. 
+4. If you want to end recording when home button is pressed, you can optionally call `stopSession()` at `applicationDidEnterBackground`.
 
 ```swift
 func applicationDidEnterBackground(_ application: UIApplication) {
-        UserVision.shared.stopSession()
-}
-    
-func applicationWillTerminate(_ application: UIApplication) {
         UserVision.shared.stopSession()
 }
 ```

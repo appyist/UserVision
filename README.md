@@ -74,7 +74,7 @@ import UserVision
 
 Parameters:
 
-- ptr -> UIWindow
+- rootViewController -> UIViewController
 
 - type -> RecordType (Optional parameter, default value is .audioScreen)
 
